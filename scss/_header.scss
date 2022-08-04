@@ -1,0 +1,95 @@
+.header {
+    &-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 114px;
+        background-color: $brandGreen;
+        z-index: 3;
+
+        &_logo {
+            position: relative;
+            top: 28px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            max-width: 893px;
+        }
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        gap: 44px;
+
+        &_changeCurrency {
+            display: flex;
+            align-items: center;
+
+            &::after,
+            .header-nav_item::after {
+                display: none;
+            }
+
+            img {
+                margin-left: 6px;
+            }
+        }
+
+        &_item {
+            position: relative;
+            color: $white;
+            font-weight: 700;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 2.5px;
+                background-color: #fff;
+                transition: .3s ease-in-out width;
+            }
+
+            &:hover {
+                color: $brandDarkGreen;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-body {
+        background-image: url(../img/header-bg-1.webp);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        position: relative;
+        top: 48px;
+        padding-top: calc(361px - 48px);
+
+        .wrapper {
+            align-items: center;
+        }
+
+        .text {
+            &-hero {
+                text-align: center;
+                max-width: 555px;
+            }
+        }
+
+        &_wave {
+            margin: 32px 0;
+        }
+    }
+}

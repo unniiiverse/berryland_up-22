@@ -45,9 +45,9 @@ html {
 }
 
 .wrapper {
-    min-width: $C-wrapperMaxWidth;
+    min-width: $C-wrapperMinWidth;
     width: 100%;
-    max-width: $C-wrapperMinWidth;
+    max-width: $C-wrapperMaxWidth;
     padding: 0 $C-wrapperPadding;
     margin: 0 auto;
 
