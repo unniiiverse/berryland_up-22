@@ -1,0 +1,66 @@
+/* 
+    UV-Accordion
+    
+    Version: 1.1.3
+    Author: Mykhailo Unniiiverse (unniv.info)
+    License: MIT
+*/
+
+
+.uv-accordion {
+    &_item {
+        min-width: 200px;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 8px;
+    }
+
+    &_trigger {
+        transition: .3s ease-in-out;
+        background-color: #222;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover {
+            background-color: #444;
+
+            .uv-accordion_icon {
+                transform: rotate(24deg);
+            }
+        }
+    }
+
+    &_icon {
+        transition: .3s ease-in-out;
+        transform: rotate(45deg);
+
+        path {
+            transition: .3s ease-in-out;
+            fill: #fff;
+        }
+    }
+
+    &_content {
+        background-color: #888;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        will-change: max-height;
+        transition: .3s ease-in-out;
+    }
+
+    &--expanded {
+        .uv-accordion {
+            &_icon {
+                transform: rotate(0);
+            }
+
+            &_content {
+                opacity: 1;
+                padding: 24px 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+/* 
+    UVST
+    
+    Version: 1.1.2
+    Author: Mykhailo Unniiiverse (unniv.info)
+    License: MIT
+*/
+
+@import './base/normalize';
+@import './base/_mixins';
+@import './base/_fonts';
+@import './_common';
+
+//* = = = КОНФИГУРАЦИЯ = = =
+
+//* Общие настройки
+$C-htmlFontSize: 14px;
+$C-fontSize: 16px;
+$C-fontColor: #000;
+$C-fontFamily: system-ui;
+$C-fontWeight: 400;
+
+//* Настройки контейнера
+$C-wrapperMinWidth: 320px;
+$C-wrapperMaxWidth: 1170px;
+$C-wrapperPadding: 16px; // С каждой стороны
+
+//* = = = МОДУЛИ = = =
+// @import './base/modules/_accordion'; // Аккордеон
+// @import './base/modules/_tabs'; // Табы
+// @import './base/modules/_popup'; // Попап
+// @import './base/modules/_popup'; // Попап
+
+//* = = = АВТО-НАСТРОЙКИ = = =
+
+html {
+    transition: .3s ease-in-out all;
+
+    * {
+        font-size: $C-fontSize;
+        color: $C-fontColor;
+        font-family: $C-fontFamily;
+        font-weight: $C-fontWeight;
+    }
+}
+
+.wrapper {
+    min-width: $C-wrapperMaxWidth;
+    width: 100%;
+    max-width: $C-wrapperMinWidth;
+    padding: 0 $C-wrapperPadding;
+    margin: 0 auto;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        content: 'theme--dark';
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        content: 'theme--light';
+    }
+}
+
+/* 
+    UV-EasyGrids
+    
+    Version: 1.1.2
+*/
+
+.uv {
+    &-cards {
+        &_flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        &_grid {
+            display: grid;
+            align-items: start;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    &-card {
+        flex: 1 0 0;
+        min-width: 280px;
+        width: auto;
+        height: auto;
+        display: block;
+    }
+}
+
+//* = = = ПОДКЛЮЧЕНИЕ СТРАНИЦ = = =
+
+@import './_header';
+// ...
+@import './_header';

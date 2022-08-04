@@ -1,0 +1,29 @@
+/* 
+    UV-Tabs
+    
+    Version: 1.1.1
+    Author: Mykhailo Unniiiverse (unniv.info)
+    License: MIT
+*/
+
+.uv-tabs {
+    &_list {
+        display: flex;
+    }
+
+    &_item {
+
+
+        &--active {
+            background-color: red;
+        }
+    }
+
+    &-content {
+        &_item {
+            &:not(.uv-tabs-content_item--active) {
+                display: none;
+            }
+        }
+    }
+}

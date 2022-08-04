@@ -1,0 +1,2 @@
+ErrorDocument 403 https://static.unniv.info/errors/403?site=unniv.info
+ErrorDocument 404 https://static.unniv.info/errors/404?site=unniv.info
