@@ -1,0 +1,23 @@
+.footer {
+    background-color: $brandGreen;
+    padding: 65px 0;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .text {
+        color: $white;
+
+        &-heading_3 {
+            text-transform: uppercase;
+        }
+    }
+
+    &-col {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+}

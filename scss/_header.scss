@@ -1,9 +1,5 @@
 .header {
     &-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
         max-height: 114px;
         background-color: $brandGreen;
         z-index: 3;

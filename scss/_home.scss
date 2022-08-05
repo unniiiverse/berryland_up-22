@@ -1,5 +1,6 @@
 .main {
     margin-top: 32px;
+    margin-bottom: 90px;
 
     .wrapper {
         align-items: center;
@@ -74,7 +75,7 @@
         }
 
         &-card {
-            background: #FFFFFF;
+            background: $white;
             box-shadow: 0px 0px 16px rgba(184, 180, 176, 0.5);
             border-radius: 24px;
             padding: 24px;
@@ -102,6 +103,7 @@
 
             &--sale {
                 .products-card {
+
                     &_saleBadge,
                     &_sale {
                         visibility: visible;
@@ -140,7 +142,7 @@
                     }
                 }
             }
-            
+
             &_price {
                 display: flex;
                 justify-content: space-around;
@@ -193,7 +195,7 @@
                 padding: 12px 10px;
                 background-color: $brandDarkGreen;
                 border-radius: 16px;
-                color: #fff;
+                color: $white;
                 font-weight: 700;
                 transition: .3s ease-in-out background-color;
 
@@ -210,7 +212,73 @@
             padding: 24px;
             border: 2px solid $brandGreen;
             border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .text-heading_2 {
+                margin-bottom: 24px;
+            }
+            
+            &_wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+    
+            &_item {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            &_itemDetails {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            &_remove {
+                margin-right: 16px;
+            }
+    
+            &_title {
+                font-weight: 700;
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+    
+            &_itemCost {
+                &::after {
+                    content: '₪';
+                }
+            }
+
+            &_wave {
+                margin: 20px 0;
+            }
+            
+            &_details {
+                margin-bottom: 24px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                width: 100%;
+            }
+    
+            &_checkout {
+                background-color: $brandGreen;
+                border-radius: 16px;
+                color: $white;
+                font-weight: 700;
+                padding: 12px;
+                width: 100%;
+                transition: .3s ease-in-out background-color;
+
+                &:hover {
+                    background-color: $brandDarkGreen;
+                }
+            }
         }
+
     }
 }
 
