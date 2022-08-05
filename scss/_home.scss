@@ -110,6 +110,18 @@
                     &_sale {
                         position: relative;
                     }
+
+                    &_cost::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: #F47676;
+                        width: 100%;
+                        height: 3px;
+                        opacity: .8;
+                    }
                 }
             }
 
@@ -136,6 +148,7 @@
             }
 
             &_cost {
+                position: relative;
                 margin-right: 6px;
             }
 
