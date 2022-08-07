@@ -51,7 +51,7 @@
                 <nav class="header-nav">
                     <a href="#" class="text header-nav_item">Доставка</a>
                     <a href="#" class="text header-nav_item">Оплата</a>
-                    <a href="#" class="text header-nav_item">Корзина</a>
+                    <button class="uv-popup_trigger text header-nav_item" data-uv-popup-id="" aria-label="Открыть попап" aria-haspopup="true">Корзина</button>
                 </nav>
             </div>
         </div>
@@ -67,6 +67,31 @@
             </div>
         </div>
     </header>
+
+    <div class="uv-popup_container" aria-hidden="true">
+        <div class="uv-popup_item" aria-hidden="true" aria-label="Попап" data-uv-popup-id="">
+            <div class="uv-popup_top">
+                <span>Title</span>
+                <button class="uv-popup_cross uv-popup_close" aria-label="Закрыть попап">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6.12134" y="3" width="32" height="3" rx="1.5" transform="rotate(45 6.12134 3)"
+                            fill="#222222" />
+                        <rect x="4.12134" y="26" width="32" height="3" rx="1.5" transform="rotate(-45 4.12134 26)"
+                            fill="#222222" />
+                    </svg>
+                </button>
+            </div>
+            <div class="uv-popup_content">
+
+            </div>
+            <span class="uv-popup_line"></span>
+            <div class="uv-popup_bottom">
+                <button class="uv-popup_button uv-popup_close" aria-label="Закрыть попап">
+                    <span>Got it!</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <main class="main">
         <div class="wrapper">

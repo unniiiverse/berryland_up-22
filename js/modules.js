@@ -1,10 +1,10 @@
-const html = document.documentElement;
+let html = document.documentElement;
 const systemTheme = window.getComputedStyle(html).content.replace(/"/g, '');
 const systemLanguage = window.navigator.language;
 
 // UVModuleAccordion() // Аккордеон
 // UVModuleTabs() // Аккордеон
-// UVModulePopup() // Попап
+UVModulePopup() // Попап
 
 "use strict"
 
