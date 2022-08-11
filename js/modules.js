@@ -94,14 +94,6 @@ function UVModulePopup() {
     if (btns && popups) {
         const container = document.querySelector('.uv-popup_container');
 
-        btns.forEach((el, i) => {
-            el.setAttribute('data-uv-popup-id', i);
-        })
-
-        popups.forEach((el, i) => {
-            el.setAttribute('data-uv-popup-id', i);
-        })
-
         function hide() {
             container.style.opacity = 0;
             container.style.visibility = 'hidden';

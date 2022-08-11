@@ -37,6 +37,24 @@
         <div class="header-menu">
             <div class="wrapper">
                 <nav class="header-nav">
+                    <div class="header-nav_burger burger-menu header-nav_item--mobile">
+                        <button class="burger-menu_btn">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 24H40.5" stroke="#2F4F3C" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 12H40.5" stroke="#2F4F3C" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M7.5 36H40.5" stroke="#2F4F3C" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="burger-menu_wrapper">
+                            <div class="burger-menu_inner">
+
+                            </div>
+                        </div>
+                    </div>
                     <button class="header-nav_item header-nav_changeCurrency"
                         aria-label="Изменить валюту. Текущая валюта: Иврит">
                         <p class="text header-nav_item">Иврит</p>
@@ -51,8 +69,26 @@
                 <nav class="header-nav">
                     <a href="#" class="text header-nav_item">Доставка</a>
                     <a href="#" class="text header-nav_item">Оплата</a>
-                    <button class="uv-popup_trigger text header-nav_item" data-uv-popup-id="" aria-label="Открыть попап"
-                        aria-haspopup="true">Корзина</button>
+                    <button class="uv-popup_trigger text header-nav_item" data-uv-popup-id="0"
+                        aria-label="Открыть попап" aria-haspopup="true">Корзина</button>
+                    <button class="uv-popup_trigger text header-nav_item header-nav_item--mobile" data-uv-popup-id="0"
+                        aria-label="Открыть попап" aria-haspopup="true">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M36 34.5H12.8428C12.4915 34.5 12.1513 34.3767 11.8816 34.1516C11.6119 33.9265 11.4298 33.6139 11.367 33.2683L6.3603 5.73167C6.29746 5.38606 6.11532 5.07346 5.84562 4.84837C5.57592 4.62329 5.23578 4.5 4.8845 4.5H1.5"
+                                stroke="#2F4F3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13.5 42C15.5711 42 17.25 40.3211 17.25 38.25C17.25 36.1789 15.5711 34.5 13.5 34.5C11.4289 34.5 9.75 36.1789 9.75 38.25C9.75 40.3211 11.4289 42 13.5 42Z"
+                                stroke="#2F4F3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M36 42C38.0711 42 39.75 40.3211 39.75 38.25C39.75 36.1789 38.0711 34.5 36 34.5C33.9289 34.5 32.25 36.1789 32.25 38.25C32.25 40.3211 33.9289 42 36 42Z"
+                                stroke="#2F4F3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M7.5 12H40.2027C40.4224 12 40.6394 12.0483 40.8384 12.1414C41.0374 12.2345 41.2135 12.3702 41.3543 12.5389C41.4951 12.7076 41.5971 12.9051 41.6531 13.1176C41.7091 13.33 41.7178 13.5522 41.6785 13.7683L39.224 27.2683C39.1611 27.6139 38.979 27.9265 38.7093 28.1516C38.4396 28.3767 38.0994 28.5 37.7481 28.5H10.5"
+                                stroke="#2F4F3C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="uv-popup_trigger--badge">0</span>
+                    </button>
                 </nav>
             </div>
         </div>
@@ -71,7 +107,7 @@
     </header>
 
     <div class="uv-popup_container" aria-hidden="true">
-        <div class="uv-popup_item" aria-hidden="true" aria-label="Попап" data-uv-popup-id="">
+        <div class="uv-popup_item" aria-hidden="true" aria-label="Попап" data-uv-popup-id="0">
             <div class="uv-popup_top">
                 <span>Корзина</span>
                 <button class="uv-popup_cross uv-popup_close" aria-label="Закрыть попап">
@@ -86,7 +122,7 @@
             <div class="mobile-cart uv-popup_content">
                 <p class="mobile-cart--empty">Корзина пуста</p>
                 <ul class="mobile-cart_wrapper">
-                    
+
                 </ul>
                 <svg class="mobile-cart_wave" width="249" height="10" viewBox="0 0 249 10" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
