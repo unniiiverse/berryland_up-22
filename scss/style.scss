@@ -34,6 +34,7 @@ $C-wrapperPadding: 16px; // С каждой стороны
 
 html {
     transition: .3s ease-in-out all;
+    overflow-x: hidden;
 
     * {
         font-size: $C-fontSize;

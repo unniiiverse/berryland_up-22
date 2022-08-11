@@ -106,6 +106,7 @@ function UVModulePopup() {
             container.style.opacity = 0;
             container.style.visibility = 'hidden';
             container.setAttribute('aria-hidden', true);
+            document.documentElement.style.overflowY = 'visible';
 
             popups.forEach(el => {
                 el.style.opacity = 0;
@@ -128,6 +129,7 @@ function UVModulePopup() {
                         el.style.position = 'relative';
                         el.style.transform = 'scale(1)';
                         el.setAttribute('aria-hidden', false);
+                        document.documentElement.style.overflowY = 'hidden';
                     }
                 })
 

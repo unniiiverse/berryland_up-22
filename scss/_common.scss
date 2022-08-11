@@ -2,6 +2,16 @@ $brandGreen: #8CC63F;
 $brandDarkGreen: #2F4F3C;
 $white: #FFFFFF;
 
+.uv {
+    &-popup {
+        &_content {
+            max-width: 600px;
+            width: 100%;
+            min-width: 300px;
+        }
+    }
+}
+
 .text {
     font-family: 'Nunito';
     font-style: normal;

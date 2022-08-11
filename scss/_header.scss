@@ -64,14 +64,15 @@
     }
 
     &-body {
-        background-image: url(../img/header-bg-1.webp);
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        object-fit: cover;
-        position: relative;
-        top: 48px;
         padding-top: calc(361px - 48px);
+
+        &_bg {
+            width: 100%;
+            max-height: 1080px;
+            top: 48px;
+            position: absolute;
+            z-index: -1;
+        }
 
         .wrapper {
             align-items: center;

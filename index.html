@@ -51,11 +51,13 @@
                 <nav class="header-nav">
                     <a href="#" class="text header-nav_item">Доставка</a>
                     <a href="#" class="text header-nav_item">Оплата</a>
-                    <button class="uv-popup_trigger text header-nav_item" data-uv-popup-id="" aria-label="Открыть попап" aria-haspopup="true">Корзина</button>
+                    <button class="uv-popup_trigger text header-nav_item" data-uv-popup-id="" aria-label="Открыть попап"
+                        aria-haspopup="true">Корзина</button>
                 </nav>
             </div>
         </div>
         <div class="header-body">
+            <img src="./img/header-bg-1.webp" alt="" class="header-body_bg">
             <div class="wrapper">
                 <h1 class="text text-hero">Замороженные ягоды в Израиле</h1>
                 <svg class="header-body_wave" width="273" height="10" viewBox="0 0 273 10" fill="none"
@@ -71,7 +73,7 @@
     <div class="uv-popup_container" aria-hidden="true">
         <div class="uv-popup_item" aria-hidden="true" aria-label="Попап" data-uv-popup-id="">
             <div class="uv-popup_top">
-                <span>Title</span>
+                <span>Корзина</span>
                 <button class="uv-popup_cross uv-popup_close" aria-label="Закрыть попап">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="6.12134" y="3" width="32" height="3" rx="1.5" transform="rotate(45 6.12134 3)"
@@ -81,14 +83,22 @@
                     </svg>
                 </button>
             </div>
-            <div class="uv-popup_content">
-
-            </div>
-            <span class="uv-popup_line"></span>
-            <div class="uv-popup_bottom">
-                <button class="uv-popup_button uv-popup_close" aria-label="Закрыть попап">
-                    <span>Got it!</span>
-                </button>
+            <div class="mobile-cart uv-popup_content">
+                <p class="mobile-cart--empty">Корзина пуста</p>
+                <ul class="mobile-cart_wrapper">
+                    
+                </ul>
+                <svg class="mobile-cart_wave" width="249" height="10" viewBox="0 0 249 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.999999 7.48114C5.58827 5.16231 7.71908 1 15.3869 1C26.0022 1 26.0022 8.99998 36.6252 8.99998C47.2482 8.99998 47.2482 1 57.8635 1C68.4787 1.00001 68.4787 8.99998 79.1017 8.99999C89.7169 8.99999 89.7169 1.00001 100.34 1.00001C110.963 1.00001 110.963 8.99999 121.578 8.99999C132.193 8.99999 132.193 1.00001 142.816 1.00001C153.439 1.00001 153.44 8.99999 164.055 8.99999C174.67 8.99999 174.67 1.00001 185.293 1.00002C195.908 1.00002 195.908 9 206.523 9C217.139 9 217.139 1.00002 227.762 1.00002C238.377 1.00002 238.377 9 249 9"
+                        stroke="#8CC63F" stroke-width="2" />
+                </svg>
+                <div class="mobile-cart_details">
+                    <span class="text">Подытог: </span>
+                    <span class="text mobile-cart_total">00.00</span>
+                </div>
+                <button class="text mobile-cart_checkout">Оплатить</button>
             </div>
         </div>
     </div>
@@ -111,7 +121,7 @@
 
         <div class="main-products products products_wrapper">
             <ul class="products_cards">
-                <li class="products-card products-card--sale" data-filter-category="">
+                <li class="products-card products-card--sale" data-filter-category="berries">
                     <svg class="products-card_saleBadge" width="80" height="80" viewBox="0 0 80 80" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M80 0H24C10.7452 0 0 10.7452 0 24V80L80 0Z" fill="#8CC63F" />
