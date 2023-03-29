@@ -1,8 +1,21 @@
-![Превью](https://unniiiverse.github.io/cdn/image/projectPreview/berryland.png)
-<h1 style="margin: 0; margin-bottom: 16px;">BerryLand | <a href="https://unniiiverse.github.io/project/2022/berryland/">Посетить</a></h1>
-<p style="margin: 0;">Сайт написан за 4 дня.</p>
-<p style="margin: 0;">Страниц на сайте: 1</p>
+# Berry Land
+![PREVIEW](cover.png)
 
-<br>
+Landing page for an online store of frozen berries.
+
+## [VISIT](https://unniiiverse.github.io/project/2022/berryland/)
+
+Type: Langing page, uncomercial. <br>
+Language: RU. <br>
+Completed in: 4 days. <br>
+Pages: 1. <br>
+
+Status: COMPLETED <br>
+
+## Features
++ Mobile adaptive (excluding burger menu)
++ Working cart (desktop / mobile)
++ Stepper
++ Sort
 
 unniiiverse © 2022
